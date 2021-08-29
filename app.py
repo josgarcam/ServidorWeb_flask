@@ -39,6 +39,11 @@ def ej_json2():
           "nombre" : "Maria",
          "email" : "maria@us.es"
         },
+        {
+           "id" : 3,
+          "nombre" : "Carmen",
+         "email" : "Carmen@us.es"
+        },
     ]
     return jsonify(results)
 
