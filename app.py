@@ -11,13 +11,14 @@ from flask import jsonify
 ## Instanciamos la clase Flask
 app = Flask(__name__) #app es la aplicación servidor
 
+# @app.route('/')
+# def hola_mundo():
+#     return "Hola Mundo"
+
 @app.route('/prueba')
 def hola_mundo():
     return "Hola Mundo"
 
-@app.route('/diccionario')
-def ej_diccionario():
-    return {"nombre" : "Jose", "email" : "jgarcia111@us.es"}
 
 @app.route('/json')
 def ej_json():
