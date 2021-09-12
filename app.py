@@ -19,10 +19,19 @@ import config
 ## Instanciamos la clase Flask
 app = Flask(__name__) #app es la aplicación servidor
 
+<<<<<<< HEAD
 app.config.from_object(config)
 db = SQLAlchemy(app)
 
+=======
+@app.route('/prueba')
+def hola_mundo():
+    return "Hola Mundo"
+>>>>>>> parent of 88b3e64 (Actualizar app.py)
 
+@app.route('/diccionario')
+def ej_diccionario():
+    return {"nombre" : "Jose", "email" : "jgarcia111@us.es"}
 
 ######### GET ##########
 # @app.route('/coches', methods=['GET'])
