@@ -48,12 +48,12 @@ print (resp)
 
 # Creamos la peticion HTTP con PUT:
 input_data = {'marca': 'Actualizamarca', 'modelo': 'actualiza_modelo', 'matricula': '0000ZZZ', 'kms': 300000, 'cilindrada': 1100}
-resp = requests.put('http://localhost:5002/coches/4', json=input_data)
+resp = requests.put('http://localhost:5002/coches/2', json=input_data)
 print (resp)
 
 
 # Creamos la peticion HTTP con DELETE:
-resp = requests.delete('http://localhost:5002/coches/4')
+resp = requests.delete('http://localhost:5002/coches/2')
 print (resp)
 
     
